@@ -1,0 +1,24 @@
+# Docker CLI
+- docker --version
+- GENERAL: docker <_command> <_sub-command> <_options>
+  - Uses on CLI
+  - Examples: 
+    - docker run ubuntu
+    - docker <_command> | docker image <_command>
+    - docker run --name <container_name> -p <host_port>:<container_port> -d nginx
+- docker container ls -a (more suitable today) | docker ps -a
+  - Flag -a shows all the executed containers. 
+- docker rm <container_id>
+- docker version 
+  - Show the Docker version information
+- docker info
+  - Display system-wide information
+- docker --help 
+  - Commands and management commands
+- docker network ls
+- docker network --help
+- docker volume --help
+- docker rm --help
+- doker run -it <image> 
+  - run the container executing the terminal inside
+  - Example: docker run -it node < Can use JS on terminal inside the container

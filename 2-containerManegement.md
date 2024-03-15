@@ -1,0 +1,16 @@
+# Container management
+- docker run -d -p 8080:80 nginx (example)
+  - -d > run in the background, releasing the terminal
+- docker stop <container_id | container_name>
+- docker start <container_id | container_name>
+- docker rm -f <container_id | container_name>
+  - -f > force remove running containers
+- docker rm $(docker container ls -a -q)
+  - -q > return just containers_id
+  - Command remove all containers
+- docker run -d -P nginx
+  - Define random host ports to a container
+  - Ex: 127.0.0.1:3770
+- docker run -it <image>
+  - Open terminal inside the container
+  - Ex: docker run -it ubuntu
