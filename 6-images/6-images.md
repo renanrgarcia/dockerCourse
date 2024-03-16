@@ -7,3 +7,12 @@
   - docker build <image_directory>
   - docker run -d -p <host>:<container> --name <container_name> <image:id>
 - docker image ls (Lists every installed images)
+- docker pull <image_name>
+  - The target image is downloaded and cached
+- docker tag <image_id> <image_name>:<image_tag>
+  - It's possible to add a name and a tag to an image
+  - It's possible to give the name+tag when creating: docker build -t <name>:<tag>
+- docker rmi <image_id> [-f]
+  - Remove images, if in use, the -f tag forces to remove
+- docker rmi (docker images -q) -f
+  - Removes all the images. Tag -q returns only the images_id
