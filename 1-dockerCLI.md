@@ -22,3 +22,5 @@
 - doker run -it <image> 
   - run the container executing the terminal inside
   - Example: docker run -it node < Can use JS on terminal inside the container
+- docker system prune
+  - Remove images, container and networks

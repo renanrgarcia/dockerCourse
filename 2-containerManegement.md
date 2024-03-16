@@ -14,6 +14,8 @@
 - docker run -it <image>
   - Open terminal inside the container
   - Ex: docker run -it ubuntu
+- docker run --rm <container>
+  - Automatically delete the container after usage
 - docker start -it <container_id>
   - Starts a created container on interative terminal mode
 - docker stop (docker ps -q)
