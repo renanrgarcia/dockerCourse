@@ -1,13 +1,14 @@
 # Logs and resources
 - docker logs -f <container_name>
   - -f > monitor logs outputs
-- docker top <container_name>
-  - Show the running process
 - docker stats
   - Show containers status
   - Ex: CPU, memory, network
 - docker stats <container_name>
-- docker container inspect <container_name> | <container_id>
+  - Display a live stream of container(s) resource usage statistics
+- docker top <container_name>
+  - Display the running processes of a container
+- docker inspect <container_name|id>
   - Return a JSON with all container info
-- Ex: docker container inspect -f {{.NetworkSettings.Networks}} <container_name>
+- Ex: docker inspect -f {{.NetworkSettings.Networks}} <container_name|id>
   - The {{}} statement is based on Go template, that uses Jinja2

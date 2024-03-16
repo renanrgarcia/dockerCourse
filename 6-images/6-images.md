@@ -4,7 +4,7 @@
   - Ex: docker run -d -p 80:80 --name my_apache httpd 
     - It runs the official Apache image
 - To execute an image:
-  - docker build <image_directory>
+  - docker build -t <name>:<tag> <image_directory> 
   - docker run -d -p <host>:<container> --name <container_name> <image:id>
 - docker image ls (Lists every installed images)
 - docker pull <image_name>
@@ -16,3 +16,13 @@
   - Remove images, if in use, the -f tag forces to remove
 - docker rmi (docker images -q) -f
   - Removes all the images. Tag -q returns only the images_id
+- docker login
+  - Connect to Docker Hub Account
+- docker logout
+  - Disconnect to Docker Hub Account
+- docker push <docker_user>/<repository_name>
+  - Before, build your image: docker build -t <docker_user>/<repository_name> <image_directory> 
+  - Create a respository at your docker hub and push your image
+  - In the future, you can make a pull of that image: docker pull <docker_user>/<repository_name>
+- docker push <docker_user>/<repository_name>:<new-version-tag>
+  - After updating, change the tag and push to the repository

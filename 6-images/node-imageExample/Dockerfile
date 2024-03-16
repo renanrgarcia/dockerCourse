@@ -1,7 +1,7 @@
 FROM node:14
 # Base image
 
-WORKDIR /node-imageExample
+WORKDIR /node-newVersion
 # Application directory
 
 EXPOSE 3000

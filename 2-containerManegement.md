@@ -20,3 +20,5 @@
   - Starts a created container on interative terminal mode
 - docker stop (docker ps -q)
   - Stops all running containers. Tag -q return only the containers_id
+- docker cp <container_name|id>:<path/archive>
+  - Copy an archive to/from container from/to a local directory
