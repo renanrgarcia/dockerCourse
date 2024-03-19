@@ -1,17 +1,36 @@
 # Networks
-- Network types:
+
+## Theory
+- Connection types:
+  - External: with an API from an external server
+  - Host: communication with Docker local host
+  - Between containers: uses the Bridge driver to allow the conteiners communication
+- Network types (drivers):
   - Bridge: default network, for internal communication between containers
     - Dispite being called bridge, the NAT (Network Address Translation) standard is used.
-    - Best pratice: to create a new virtual network for each app. Ex: my_web = mysql, apache php | my
-  _api = flask, nodeJS
+    - Best pratice: to create a new virtual network for each app. Ex: my_web = mysql, apache php | my_api = flask, nodeJS
     - Command "iptables -t nat -L" lists all NAT rules
   - Host: do the actual bridge (uses the same IP on container and on machine)
     - No need to publish ports (-p | -P)
     - Cannot start multiple containers on the same port
     - Does not work in swarm mode 
-  - None
-    - Does not have external access neither from other containers
+  - Macvlan: connect a container to a MAC address
+  - Plugins: allows third party extensions to create other networks
+  - None: Does not have external access neither from other containers
+
+## Commands
 - docker network ls
+
+
+## Networks management
+- docker network create [-d <driver_name>] <network_name> 
+  - Driver is optional
+- docker network rm <network_name>
+  - Be careful about containers using the network
+- docker network prune
+  - Removes not used networks
+
+## Examples
 - Ex: 
   - docker run --name net_host1 -d --network host nginx:alpine; docker run --name net_host2 -d --network host nginx:alpine  
   - In this case, one of the container is going down, because is the same port.
