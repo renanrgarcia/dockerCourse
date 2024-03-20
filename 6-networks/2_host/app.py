@@ -12,6 +12,7 @@ app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'flaskhost'
 
+mysql = MySQL(app)
 
 @app.route('/', methods=['GET'])
 def index():
@@ -20,7 +21,7 @@ def index():
 
 @app.route('/inserthost', methods=['POST'])
 def inserthost():
-    data = requests('https://randomuser.me/api').json()
+    data = requests.get('https://randomuser.me/api').json()
     username = data['results'][0]['name']['first']
 
     cur = mysql.connection.cursor()
