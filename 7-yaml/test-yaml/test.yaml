@@ -1,0 +1,19 @@
+# Instructions to create a yaml file
+name: "Renan"
+age: 31
+
+# This object decribes a docker image
+object: 
+  version: 1.0.0
+  exampleInt: 4
+  archive: "docker.tar.gz"
+  string1: mystring
+  string2: "my string2"
+  valid: true
+  nullable: null
+  nullable2: ~
+
+list:
+  - a
+  - b
+  - c
