@@ -26,7 +26,7 @@ def inserthost():
 
     cur = mysql.connection.cursor()
     cur.execute("""INSERT INTO users(name) VALUES (%s)""", (username,))
-    mysql.connection.commit()
+    mysql.connection.commit() 
     cur.close()
 
     return username
