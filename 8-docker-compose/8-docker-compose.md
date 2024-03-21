@@ -14,3 +14,12 @@
 - env_files
   - Variables: ${variable}
   - Util if you have sensible data
+- Example on compose:
+env_file:
+  - ./config/wp.env
+
+## Networks
+- Example:
+networks:
+  backend:
+    driver: bridge
