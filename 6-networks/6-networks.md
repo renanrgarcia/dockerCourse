@@ -30,6 +30,8 @@
   - Be careful about containers using the network
 - docker network prune
   - Removes not used networks
+- docker network connect <network> <container>
+  - Connects a container to a network
 
 ## Examples
 - Ex: 
