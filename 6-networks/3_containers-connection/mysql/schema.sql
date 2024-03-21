@@ -1,4 +1,4 @@
-CREATE flaskdocker;
+CREATE DATABASE flaskdocker;
 USE flaskdocker;
 CREATE TABLE flaskdocker.users (
     id INT(11) NOT NULL AUTO_INCREMENT,
