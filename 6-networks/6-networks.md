@@ -32,6 +32,11 @@
   - Removes not used networks
 - docker network connect <network> <container>
   - Connects a container to a network
+- docker network disconnect <network> <container>
+  - Disconnects a container to a network
+- docker network inspect <network>
+  - Inspects a network
+
 
 ## Examples
 - Ex: 
