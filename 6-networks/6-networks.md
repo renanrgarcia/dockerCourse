@@ -20,7 +20,8 @@
 
 ## Commands
 - docker network ls
-
+- docker run -d --name <container_name> -p <host_port>:<container_port> --rm --network <networkname> -e <environment_variables>
+  - Connection between containers
 
 ## Networks management
 - docker network create [-d <driver_name>] <network_name> 
