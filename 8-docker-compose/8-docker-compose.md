@@ -9,6 +9,8 @@
   - -d executes detached
 - docker compose down
   - Stop the containers
+- docker compose ps
+  - Returns a containers summary 
 
 ## Environment variables
 - env_files
@@ -26,3 +28,8 @@ networks:
 
 ## Build images within docker-compose
 - Use the key 'build': 'image'
+
+## Bind mount within docker-compose
+- Used to persist data without down and up your compose
+volumes:
+  - "<local-path>:<container-path>"
