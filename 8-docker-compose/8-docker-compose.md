@@ -23,3 +23,6 @@ env_file:
 networks:
   backend:
     driver: bridge
+
+## Build images within docker-compose
+- Use the key 'build': 'image'
