@@ -1,0 +1,9 @@
+node1
+ssh ip172-18-0-20-cnvcuhq91nsg00f9u8b0@direct.labs.play-with-docker.com
+node2
+ssh ip172-18-0-35-cnvcuhq91nsg00f9u8b0@direct.labs.play-with-docker.com
+node3
+ssh ip172-18-0-14-cnvcuhq91nsg00f9u8b0@direct.labs.play-with-docker.com
+
+Join token
+docker swarm join --token SWMTKN-1-2rz4rluj8n8lfcmc2nsxupgvi1q4ofm1lulq8xbl6ui9d8trwy-dd89gtev6xjk9lqnedr2dqy2d 192.168.0.28:2377
