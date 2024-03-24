@@ -13,3 +13,8 @@
 - Pods: a group of containers running on the node
 - Service: expose the pods to the external world
 - Kubectl: command line interface to interact with the cluster
+  - Install first: https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+  - Then run: kubectl version
+- Minikube: sort of a simulator of Kubernetes, for local development
+  - Install first: https://minikube.sigs.k8s.io/docs/start/
+  - Then run: minikube version
