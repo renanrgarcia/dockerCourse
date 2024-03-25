@@ -18,3 +18,12 @@
 - Minikube: sort of a simulator of Kubernetes, for local development
   - Install first: https://minikube.sigs.k8s.io/docs/start/
   - Then run: minikube version
+
+## Minikube
+- `minikube start --driver=<driver>`
+  - Start the simulator and create a minikube cluster
+  - the driver can be: docker, virtualbox, kvm, xhyve
+- `minikube status`
+  - Get the status of the minikube cluster
+- `minikube stop`
+  - Stop the minikube cluster
