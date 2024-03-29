@@ -19,7 +19,7 @@
 - docker network --help
 - docker volume --help
 - docker rm --help
-- doker run -it <image> 
+- docker run -it <image> 
   - run the container executing the terminal inside
   - Example: docker run -it node < Can use JS on terminal inside the container
 - docker system prune

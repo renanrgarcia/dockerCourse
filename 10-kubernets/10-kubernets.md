@@ -18,6 +18,7 @@
 - Minikube: sort of a simulator of Kubernetes, for local development
   - Install first: https://minikube.sigs.k8s.io/docs/start/
   - Then run: minikube version
+- Deployments: service with a group of Pods 
 
 ## Minikube
 - `minikube start --driver=<driver>`
@@ -27,3 +28,8 @@
   - Get the status of the minikube cluster
 - `minikube stop`
   - Stop the minikube cluster
+- `minikube dashboard`
+  - Open the dashboard in the browser
+  - `minikube dashboard --url`: obtain the URL of the dashboard 
+- `kubectl create deployment <deployment_name> --image=<image_name>`
+  - Create a deployment in the cluster
